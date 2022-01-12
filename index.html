@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    /* Button used to open the chat form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #A0522D;
+      color: #fffdd0;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+    }
+    
+    /* The popup chat - hidden by default */
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: #fffdd0;
+    }
+    
+    /* Full-width textarea */
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 200px;
+    }
+    
+    /* When the textarea gets focus, do something */
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for the submit/send button */
+    .form-container .btn {
+      background-color: #A0522D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+    
+    .textarea-container { 
+      position: relative; 
+    } 
+    .textarea-container textarea { 
+      width: 100%; 
+      height: 100%; 
+      box-sizing: border-box; 
+    } 
+    .textarea-container button { 
+      position: absolute; 
+      top: 0; 
+      right: 0; 
+    }
+    
+    .test button{
+    
+      position: abso; 
+       right:50px;
+    }
+    .test { 
+      position: relative;
+     
+    } 
+    .test textarea { 
+      width: 100%; 
+      height: 100%; 
+      box-sizing: border-box; 
+    } 
+    
+    </style>
+    
+
+
+
+
+
+
+
+
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Serene Life</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+</head>
+
+<body>
+  <!-- ======= Chatty ======= -->
+
+  <button class="open-button" onclick="openForm()">HOPESY</button>
+
+  <div class="chat-popup" id="myForm">
+  
+    <form  class="form-container">
+    
+      <h1>HOPESY</h1>
+  
+    
+    <p>hello,  i am hopesy. Welcome to Serene Life. So here we at Serene Life helps people to evolve and make their lifestyle better.So lets start the journey below are 3 cores which will help you in being successful </p>
+     <br>
+         
+         <input type="button" class="btn" onclick=" location.href='physicalintro/index.html'" value= "Physcial Fitness">
+   <input type="button" class="btn" onclick= "location.href='zenweb/index.html'" value="Mental Health">
+      <input type="button" class="btn" onclick="location.href='Nutrition.php'" value="Nutrition" >
+      <input type="button" class="btn" onclick="closeForm()" value="Close" >
+
+    </form>
+  </div>
+  <!-- ======= End chatty ======= -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent" style="margin-top:-50px">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">Serene Life</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="/serene/index.html/#about">Vision</a></li>
+          <li><a href="stories/index.php"><span>Tell a story</span> <i class="bi bi-chevron-down"></i></a></li>
+          
+        
+          <li><a class="nav-link scrollto " href="#wall">Wallpaper</a></li>
+          <li><a class="nav-link scrollto" href="workwithus/index.php">Work with us</a></li>
+          <li><a class="nav-link scrollto" href="feedback/index.php">Feedback</a></li>
+          <li class="dropdown"><a href="#bk"><span>Wellbeing</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                  <li><a href="physicalintro/index.html">Physical Fitness</a></li>
+                  <li><a href="Nutrition.php">Nutrition</a></li>
+                  <li><a href="zenweb/index.html">Mental Health</a></li>
+                </ul>
+              </li>
+          <li class="dropdown"><a href="/serene/login/signup.php"><span>User</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+            <li><a href="/serene/login/signup.php">SignUp</a></li>
+            <li><a href="/serene/login/">Login</a></li>
+          </ul>
+        </li>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      
+      
+    </div>
+  </header><!-- End Header -->
+
+  
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url(assets/img/physical69.png);  background-size: cover;" >
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown" style="color:#F5DEB3;"><span>Physical Fitness</span></h2>
+                <p class="animate__animated animate__fadeInUp">Physical fitness is a state of health and well-being and, more specifically, the ability to perform aspects of sports, occupations and daily activities. Physical fitness is generally achieved through proper nutrition, moderate-vigorous physical exercise, and sufficient rest. <br><i>"To enjoy the glow of good health, you must exercise."</i></p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url(assets/img/lemon69.jpeg);   background-size: cover;">
+            <a href="Nutrition.html"></a>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span >Nutrition</span></h2>
+                <p class="animate__animated animate__fadeInUp"> Nutrition includes all the stuff that's in your food, such as vitamins, protein, fat, and more. It's important to eat a variety of foods, including fruits, vegetables, dairy products, and grains, so you have what you need to grow and be healthy.<br><i>"Eat Better, Not Less"</i></p>
+              
+              
+               
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(assets/img/mental69.jpeg); background-size: cover;">
+            <div class="carousel-background">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Mental Health</span></h2>
+                <p class="animate__animated animate__fadeInUp">Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.<br><i>“Self-care is how you take your power back.” </i></p>
+              </div>
+            </div>
+          </div>
+        
+
+         
+        </div>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+       </div>
+        </div>
+     
+
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about " >
+      <div class="container-fluid">
+
+        <div class="row">
+          <h2 style=  "margin-left: 20px;" >Vision</h2>
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/v1.jpg");'></div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3>Vision - After all life is a journey</h3>
+              <p>
+                “To keep the body in good health is a duty…otherwise we shall not be able to keep the mind strong and clear.” – Buddha
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> Guiding people to live a peaceful and productive life.</li>
+                <li><i class="bx bx-check-double"></i> Various activities that would actually help you track your progress.</li>
+                <li><i class="bx bx-check-double"></i> All health guidance under one roof from fitness to mental health.</li>
+              </ul>
+              <p>
+                To improve health and provide more joy to people all over the world is the main moto of our website. With the busy lifetsyle we all have right now, these guidance and activities on our fingertips help us evolve and that is all we need.
+              </p>
+              <h3>Life is an art make it your masterpiece</h3>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+     <!-- ======= Features Section ======= -->
+     <section id="features" class="features" style=  "margin-top: -50px;">  
+        <header class="section-header">
+          <h2 style=  "margin-left: 20px;" id="bk" >Cores</h2>
+          <p style=  "margin-left: 20px;">Physical Fitness</p>
+        </header>
+
+
+        <div class="row">
+          <div class="col-lg-6">
+           
+            <img src="assets/img/stretch.jpg" class="img-fluid" alt="" style=  "margin-left: 20px;">
+          </div>
+              
+                  <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+                    <div class="row align-self-center gy-4">
+
+           <h2 style="color:#A0522D"><b>Why do you need to pay attention on your fitness</b></h2>
+
+              <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="tab1">
+                  <p>In this digital world with getting access to everything right at your fingertips, sitting at the same place in the same posture does affect our body’s well-being in the longer run.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    
+                    
+                  </div>
+                  <p>Incorporating physical activities into your routine would not only energize but also make you feel productive to tackle the day ahead.</p>
+                  <div class="d-flex align-items-center mb-2">
+                   
+                    
+                  </div>
+                  <p>Some of the easy physical exercises that one could incorporate can be yoga, stretching, cardio, and lifting weights occasionally.
+                  </p>
+                </div><!-- End Tab 1 Content -->
+  
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+        <div>        
+        </div>
+
+        <!-- Feature Tabs -->
+        <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <header class="section-header" style=  "margin-top: -50px;">
+              
+              <p style=  "margin-left: 20px;">Nutrition</p>
+            </header>
+            <h3>Why do you need to pay attention on your nutrition</h3>
+
+           
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab1">
+                <p style=  "margin-left: 20px;">You are what you eat!
+                  Whatever you consume reflects on your body inside out
+                  </p>
+                <div class="d-flex align-items-center mb-2">
+                 
+                </div>
+                <p style=  "margin-left: 20px;">The modern world has given importance to fast foods but consuming them regularly can have health worsening effects.
+                  A combination of proper exercise with a healthy diet would give you many health benefits.
+                  </p>
+                <div class="d-flex align-items-center mb-2">
+         
+                </div>
+                <p style=  "margin-left: 20px;">Foods ranging from fruits, nuts, green veggies, eggs, etc should definitely be inculcated in your diet.</p>
+              </div><!-- End Tab 1 Content -->
+
+             
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/fruits.jpeg" class="img-fluid" alt="" style="height:400px; width:600px;" >
+          </div>
+
+          
+
+          <div class="row feture-tabs" data-aos="fade-up" style=  "margin-top: 50px;">
+            <header class="section-header">
+              
+              <p style=  "margin-left: 20px;">Mental Health</p>
+            </header>
+
+            <div class="col-lg-6">
+              <img src="assets/img/meditate.jpg" class="img-fluid" alt="" style=  "margin-left: 20px;">
+            </div>
+  
+            <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+              <div class="row align-self-center gy-4">
+  
+            
+              <h3>Why do you need to pay attention on your mental health</h3>
+  
+                <div class="tab-content">
+  
+                  <div class="tab-pane fade show active" id="tab1">
+                    <p>Anxiety, depression, stress, etc are undeniable in today’s world but using the right techniques to tackle them would give you peace and sanity.</p>
+                    <div class="d-flex align-items-center mb-2">
+                      
+                    </div>
+                    <p>Certain proven ways to help come out of the emotional loop is something that everyone needs.
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                    
+                    </div>
+                    <p>Meditation, reading books, limiting your time on social media are just a few ways to come out of stress, there is much more that one could do!</p>
+                  </div><!-- End Tab 1 Content -->
+    
+                </div>
+  
+              </div>
+            </div>
+  
+          </div> <!-- / row -->
+          <div> 
+  
+            
+          </div>
+
+        </div><!-- End Feature Tabs -->
+
+    <!-- ======= Whu Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Why choose <span>Us</span></h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" >
+              <span>01</span>
+              <h4>Nicole Wang</h4>
+              <p >Best place to view different types of recipes along with various diet options to choose from</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>02</span>
+              <h4>Nia Khan</h4>
+              <p>The cutomizable workout feature has to be my personal favourite, let's one choose what we want</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>03</span>
+              <h4>Aaryan Jain</h4>
+              <p>Soothing sounds to meditate has to be my go to feature, lets on clears mind and find peace effectively </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Whu Us Section -->
+
+    <!-- ======= Wallpaper Section ======= -->
+   
+   <section id="wallpaper" class="wallpaper"  style= "margin-right:-100px">
+
+    <div class="container" id="wall" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Wallpaper</h2>
+        <p>Amazing ones just for you!</p>
+      </div>
+    </div>
+
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row g-0">
+
+        <div class="col-lg-3 col-md-4">
+          <div class="wallpaper-item">
+            <a href="wallpaper/city.jpg" class="wallpaper-lightbox" data-gall="wallpaper-item">
+              <img src="wallpaper/city.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="wallpaper-item">
+            <a href="wallpaper/clouds.jpg" class="wallpaper-lightbox" data-gall="wallpaper-item">
+              <img src="wallpaper/clouds.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="wallpaper-item">
+            <a href="wallpaper/desk.jpg" class="wallpaper-lightbox" data-gall="wallpaper-item">
+              <img src="wallpaper/desk.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="wallpaper-item">
+            <a href="wallpaper/flowers.jpg" class="wallpaper-lightbox" data-gall="wallpaper-item">
+              <img src="wallpaper/flowers.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="wallpaper-item">
+            <a href="wallpaper/green.jpg" class="wallpaper-lightbox" data-gall="wallpaper-item">
+              <img src="wallpaper/green.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="wallpaper-item">
+            <a href="wallpaper/mountain.jpg" class="wallpaper-lightbox" data-gall="wallpaper-item">
+              <img src="wallpaper/mountain.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="wallpaper-item">
+            <a href="wallpaper/sea.jpg" class="wallpaper-lightbox" data-gall="wallpaper-item">
+              <img src="wallpaper/sea.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="wallpaper-item">
+            <a href="wallpaper/sunset.jpg" class="wallpaper-lightbox" data-gall="wallpaper-item">
+              <img src="wallpaper/sunset.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Gallery Section -->
+
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq"  style= "margin-right:-100px">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Can we get personalized workouts according to our preferences?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Yes, you definitely can enter the type of workouts you would like to focus on and we would recommend tutorials based on that.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Can I track my daily mood and brain dump stuff?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Yes we do have a section for mood tracking and journalling so that you can write down your thoughts and keep a track of your mood.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    How can I add recipes or workouts over here?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    You can fill our "Work with us form" in order to give your input to our site
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Are these workouts paid?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    No, all our workout tutorials are free of cost you can watch them for free at your own comfort.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    If I want to recommend a music for meditation,how can I do that?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                     We have a "Feedback" form where in all your suggestions and recommendations are welcomed.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Are ther any freebies?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Yes! Our wallpapers are free of cost for you to download.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+  </main><!-- End #main -->
+
+ <!--===== FOOTER =====-->
+<footer id="footer" style="padding-right:-1000px ">
+  <div class="container">
+    <h3>Serene Life</h3>
+    <div class="social-links">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span>Serene Life</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+      Designed by <strong >ADITYA & SHEREENA</strong>
+    </div>
+  </div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

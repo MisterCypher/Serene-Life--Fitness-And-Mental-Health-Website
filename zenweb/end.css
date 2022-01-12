@@ -1,0 +1,63 @@
+.popup {
+  background-color: wheat;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content {
+  width: 450px;
+  height: 350px;
+  background-color: #c8b5a6;
+  padding: 15px;
+  border-radius: 6px;
+  position: relative;
+}
+img {
+  width: 300px;
+}
+.content h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: wheat;
+  font-family: Varela Round, arial, sans-serif;
+}
+p {
+  color: white;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: Varela Round, arial, sans-serif;
+}
+
+.content button {
+  padding: 15px;
+  width: 250px;
+  border-radius: 30px;
+  border: 2;
+  border-color: wheat;
+  outline: white;
+  background: #c8b5a6;
+  font-size: 1.1rem;
+  color: white;
+}
+
+a:link {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:active {
+  color: white;
+}

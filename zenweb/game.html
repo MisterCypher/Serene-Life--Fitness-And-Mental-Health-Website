@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scal=1.
+    0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+</html>
+<body>
+     <!-- Navbar Goes Here -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container">  
+      <a class="navbar-brand" href="#">Critical Thinking</a>
+      <button style="margin-right:-1000px" type="backbtn" class="backbtn" data-toggle="collapse" data-target="#journalCard" onclick=" location.href='/serene/zenweb'"><a href="/serene/zenweb">Back</a></button>      
+      </div>
+  </nav><br><br>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="question1">
+                <p>Question 1 out of 6</p>
+                
+                <h1 class="hud-main-text" id="score">Rate your day 1-5.</h1></div>
+            <div class="choice-container">
+                <p class="choice-prefix"><a href=#question2 style="color: white;">1</a></p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix"><a href=#question2 style="color: white;">2</a></p>
+                <p class="choice-text" data-number="2">Choice2</p>
+                </div>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix"><a href=#question2 style="color: white;">3</a></p>
+                <p class="choice-text" data-number="3">Choice3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix"><a href=#question2 style="color: white;">4</a></p>
+                <p class="choice-text" data-number="4">Choice4</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix"><a href=#question2 style="color: white;">5</a></p>
+                <p class="choice-text" data-number="5">Choice5</p>
+            </div>
+
+            
+            <div id="question2">
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <p>Question 2 out of 6</p>
+                
+
+                <h1 class="hud-main-text" id="score">What kind of emotions did you feel the most today?</h1></div>
+                <div class="wrapper1" style="margin-left:400px">
+                    <div class="section">
+                        <div class="emojis">
+                            <li class="slide-icon"><img src="assets/img/happy.png" alt=""></li>
+                            <li class="slide-icon"><img src="assets/img/love.png" alt=""></li>
+                            <li class="slide-icon"><img src="assets/img/cool.png" alt=""></li>
+                            <li class="slide-icon"><img src="assets/img/calm.png" alt=""></li>
+                            <li class="slide-icon"><img src="assets/img/sad.png" alt=""></li>
+                            <li class="slide-icon"><img src="assets/img/angry.png" alt=""></li>
+                            <li class="slide-icon"><img src="assets/img/omg.png" alt=""></li>
+                            <li class="slide-icon"><img src="assets/img/other.png" alt=""></li>
+                        </div>
+                    </div>
+                    <div class="slider" >
+                        <div class="thumb"><span></span></div>
+                        <div class="progress-bar"></div>
+                        <input type="range" min="0" max="100" value="0">
+                    </div>
+                </div>
+                <script>
+                    const slider= document.querySelector("input");
+                    const bar= document.querySelector(".progress-bar");
+                    const thumb= document.querySelector(".thumb");
+                    const slideIcon= document.querySelector(".slide-icon");
+                    slider.oninput=()=>{
+                        let value=slider.value;
+                        thumb.style.left=value+'%';
+                        bar.style.width=value+'%';
+                        if(value<13){
+                            slideIcon.style.marginTop="0px";
+                        }
+                        if(value>=13){
+                            slideIcon.style.marginTop="-150px";
+                        }
+                        if(value>=26){
+                            slideIcon.style.marginTop="-300px";
+                        }
+                        if(value>=39){
+                            slideIcon.style.marginTop="-450px";
+                        }
+                        if(value>=52){
+                            slideIcon.style.marginTop="-600px";
+                        }
+                        if(value>=75){
+                            slideIcon.style.marginTop="-750px";
+                        }
+                        if(value>=88){
+                            slideIcon.style.marginTop="-900px";
+                        }
+                        if(value>=100){
+                            slideIcon.style.marginTop="-1050px";
+                        }
+                    }
+            
+                </script>
+           
+            <div id="question3">
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <p>Question 3 out of 6</p>
+                
+
+                <h1 class="hud-main-text" id="score" >Why do you think you felt that way?</h1>
+                <body>
+                    <div class="wrapper" style="margin-left:300px">
+                        <div class="input-data" >
+                            <input type="text" required>
+                            <label>Your Response</label>
+                        </div>
+                       
+                    </div>
+                    
+                </body>
+            </div>
+            <div id="question4">
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <p>Question 4 out of 6</p>
+                
+
+                <h1 class="hud-main-text" id="score">What did you enjoy today?</h1>
+                <body>
+                    <div class="wrapper" style="margin-left:300px">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <label>Your Response</label>
+                        </div>
+                       
+                    </div>
+                </body>
+            </div>
+            <div id="question5">
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <p>Question 5 out of 6</p>
+                
+
+                <h1 class="hud-main-text" id="score">What did you find challenging today?</h1>
+                <body>
+                    <div class="wrapper" style="margin-left:300px">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <label>Your Response</label>
+                        </div>
+                       
+                    </div>
+                </body>
+            </div>
+            <div id="question6">
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <p>Question 6 out of 6</p>
+                
+
+                <h1 class="hud-main-text" id="score">How can I improve it?</h1>
+                <body>
+                    <div class="wrapper" style="margin-left:300px">
+                        <div class="input-data" >
+                            <input type="text" required >
+                            <label>Your Response</label>
+                        </div>
+                       
+                    </div>
+                    <div class="submit" style="margin-left:575px">
+                        <a href="end.html" class="button">Done</a>
+                    </div>
+                </body>
+            </div>
+            
+        </div>
+    </div>
+    <script src="game.js"></script>
+    
+</body>
